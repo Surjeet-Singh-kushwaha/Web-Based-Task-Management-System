@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/homepageStyle.css" />
+  </head>
+  <body>
+    <!-- This is grandparent container that takes whole width and height of viewpot -->
+
+    <div class="grandparent">
+
+        <!-- With the help of grandparent we can seamlessly center our content ,
+        that is residing in semigrand container -->
+
+      <div class="semigrand">
+        <!-- Inside semigrand there's a heading and parent div alongwith a button -->
+
+        <h1>Join as Student or Faculty</h1>
+        <div class="parent">
+
+            <!-- Parent div holds two divs  -->
+
+            <!-- this is first  div -->
+ 
+          <div class="first">     
+            <img class="stlogo" src="../images/Myimage/graduation.png" alt="" />
+            <h3>I am a Student</h3>
+          </div>
+             
+          <!-- this is second div -->
+
+          <div class="second">
+            <img class="stlogo" src="../images/Myimage/skill.png" alt="" />
+            <h3>I am a Teacher</h3>
+          </div>
+
+        </div>
+
+        <button>Login</button>
+        
+      </div>
+    </div>
+
+    <!-- This is javascript -->
+
+    <script>
+      let Button = document.querySelector("button");
+      let firstDiv = document.querySelector(".first");
+      firstDiv.addEventListener("click", function () {
+        firstDiv.style.backgroundColor = "#fafafa";
+        firstDiv.style.border = "3px solid rgb(2, 129, 129)";
+        secondDiv.style.backgroundColor = "#fff";
+        secondDiv.style.border = "1px solid grey";
+        Button.innerHTML = "Login as Student";
+        Button.onclick =function(){
+         window.location.href = '../login.jsp';
+        }
+      });
+      let secondDiv = document.querySelector(".second");
+      secondDiv.addEventListener("click", function () {
+        secondDiv.style.backgroundColor = "#fafafa";
+        secondDiv.style.border = "3px solid rgb(2, 129, 129)";
+        firstDiv.style.backgroundColor = "#fff";
+        firstDiv.style.border = "1px solid grey";
+        Button.innerHTML = "Login as Faculty";
+        Button.onclick =function(){
+          window.location.href = '../LoginFAculty.jsp';
+        }
+      });
+    </script>
+  </body>
+</html>

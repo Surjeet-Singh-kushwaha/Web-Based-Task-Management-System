@@ -1,0 +1,84 @@
+ *{
+    margin: 0px;
+    padding: 0px;
+    font-family: Helvetica;
+ }.navbarParent{
+    display: flex;
+    justify-content: space-between;
+   
+    height: 30px;
+    width: 100vw;
+}
+.navbar{
+    height: 100%;
+    width: 30%;
+    margin-top: 15px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+.navContent{
+transition: ease-out;
+
+}
+h2{
+    margin-left: 15px;
+    margin-top: 15px;
+    color: #367588;
+}
+h1{
+    /* margin-left: 50px;
+    margin-top: 60px; */
+    color: #367588;
+    font-size: 35px;
+    margin-top: 30px;
+}
+.headNdImg{
+    padding-left: 50px;
+    padding-top: 100px;
+    display: flex;
+    width: 100vw;
+    height: 120px;
+    justify-content: space-between;
+    
+
+}
+.line{
+    font-size: 25px;
+    margin-top: 60px;
+    margin-left: 50px;
+}
+img{
+    height: 460px;
+    width: 460px;
+    margin-right: 120px;
+    margin-bottom: 60px;
+}
+.lineNdbutton{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50vw;
+    height:250px;
+}
+button{
+    background-color:#367588;
+  height: 50px;
+  width: 220px;
+  border-radius: 30px;
+  color: white;
+  font-size: 20px;
+  margin-left: 50px;
+  margin-bottom: 30px;
+  border: transparent;
+}
+button:hover{
+    background-color: #468ca1;
+    cursor: pointer;
+}
+
+.navContent:hover{
+    border-bottom: 4px solid #367588;
+    cursor: pointer;
+}
+
