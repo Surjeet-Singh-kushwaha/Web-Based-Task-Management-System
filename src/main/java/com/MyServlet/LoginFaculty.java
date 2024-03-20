@@ -31,7 +31,7 @@ public class LoginFaculty extends HttpServlet {
 		String password =request.getParameter("password");
 		String jdbcUrl = "jdbc:mysql://localhost:3306/tms";
         String username = "root";
-        String pass = "@Surjeet12@";
+        String pass = "passowrd";
         HttpSession session =request.getSession();
       // PrintWriter out = response.getWriter();
         RequestDispatcher dispatcher =null;
